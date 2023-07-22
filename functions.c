@@ -17,6 +17,17 @@ int print_char(va_list types, char buffer[],
 
 	return (handle_write_char(c, buffer, flags, width, precision, size));
 }
+
+/**
+ * print_buf - prints buffer
+ * @buf: buffer pointer
+ * @nbuf: number of bytes to print
+ * Return: number of bytes printed.
+ */
+int print_buf(char *buf, unsigned int nbuf)
+{
+	return (write(1, buf, nbuf));
+}
 /**
  * print_string - Prints a string
  * @types: List a of arguments
