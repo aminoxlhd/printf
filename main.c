@@ -10,8 +10,8 @@
 int main(void)
 {
 <<<<<<< HEAD
-    int len;
-    int len2;
+	int len;
+int len2;
     unsigned int ui;
     void *addr;
 
